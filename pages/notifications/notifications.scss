@@ -1,0 +1,38 @@
+.notifications-page {
+
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #282C2F;
+    margin-bottom: 11px;
+  }
+
+  &__wrap {
+    margin-bottom: 32px;
+  }
+
+  &__wrap-show-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__show-btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    border: 0;
+    background-color: transparent;
+    color: #4b96fb;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #2F80ED;
+      opacity: 0.6;
+    }
+  }
+}

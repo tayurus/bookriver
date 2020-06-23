@@ -1,0 +1,15 @@
+import { IBook } from "~/types";
+
+export interface IProps extends IBook {
+  className?: string;
+  withAuthor?: boolean;
+  authorBook?: string;
+  descBook?: string;
+}
+
+export const defaultProps = {
+  className: "",
+  name: "?????????",
+  authorBook: "?????????",
+  descBook: "?????????",
+};

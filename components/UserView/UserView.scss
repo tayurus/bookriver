@@ -1,0 +1,136 @@
+.user-view {
+  padding: 20px 0 26px 0;
+
+  &_horizontal {
+    padding: 0 0 13px 0;
+
+    .user-view__top {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .user-view__avatar {
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      margin: 0 15px 0 0;
+    }
+
+    .user-view__group-info {
+      margin-bottom: 0;
+    }
+
+    .user-view__name {
+      text-align: left;
+    }
+
+    .user-view__last-seen {
+      text-align: left;
+    }
+
+    .user-view__quote {
+      text-align: left;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  &__group-info {
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #282c2f;
+    margin-bottom: 3px;
+  }
+
+  &__last-seen {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: #7f8794;
+    margin-bottom: 5px;
+  }
+
+  &__stat-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subscribers {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: #282c2f;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    svg {
+      display: block;
+      margin-right: 4px;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--gray-color);
+    }
+  }
+
+  &__bottom {
+  }
+
+  &__quote {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray-color);
+    background: #F9F9F9;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+
+    &:after {
+      content: '';
+      position:absolute;
+      top: -14px;
+      left: 15px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 19px 14px;
+      border-color: transparent transparent #f9f9f9 transparent;
+    }
+  }
+}

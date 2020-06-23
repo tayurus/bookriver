@@ -1,0 +1,32 @@
+.site-file-upload {
+  $root: &;
+
+  &_avatar {
+    .ant-upload-list-item {
+      border-radius: 100% !important;
+      border: none !important;
+    }
+
+    .ant-upload-list-item-info {
+      border-radius: 100%;
+      &:before {
+        border-radius: 100%;
+      }
+    }
+
+    #{$root}__remove-icon {
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      border: 1px solid #d0d9dd;
+      background: #fff;
+      position: relative;
+      top: -40px;
+      left: 33px;
+    }
+  }
+}

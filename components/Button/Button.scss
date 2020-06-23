@@ -1,0 +1,97 @@
+.site-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 8px 16px !important;
+  background-color: #ffffff !important;
+  border-radius: 2px !important;
+  border: 1px solid #d0d9dd !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  color: #282c2f !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  cursor: pointer !important;
+  height: auto !important;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid #282c2f !important;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  &_large {
+    padding: 13px 50px !important;
+  }
+
+  &_medium {
+    padding: 11px 16px !important;
+  }
+
+  &_small {
+    padding: 8px 16px !important;
+  }
+
+  &_primary {
+    background-color: var(--primary-color) !important;
+    border: 1px solid #2f80ed !important;
+    color: #fff !important;
+  }
+
+  &_link {
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    color: #4b96fb !important;
+    padding: 0 0 !important;
+    background-color: transparent !important;
+
+    &:hover {
+      border: 1px solid transparent !important;
+      color: #75b6ff !important;
+    }
+  }
+
+  &_secondary {
+    background: #fbca4b !important;
+    border: 1px solid #f8b814 !important;
+    border-radius: 2px !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    color: #282c2f !important;
+
+    &:hover {
+      background: #eabe48 !important;
+      border: 1px solid #d49f12 !important;
+    }
+  }
+
+  &_transparent {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+  }
+
+  svg {
+    display: block;
+  }
+
+  &__icon-before {
+    margin-right: 8px;
+  }
+
+  &__icon-after {
+    margin-left: 8px;
+  }
+
+  &__text {
+    display: block;
+  }
+}

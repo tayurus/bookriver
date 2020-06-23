@@ -1,0 +1,112 @@
+.books-cycle {
+  background: #fff;
+  user-select: none;
+
+  $root: &;
+
+  &_open {
+    #{$root}__right {
+      display: flex;
+    }
+  }
+
+  &:hover {
+    #{$root}__right {
+      display: flex;
+    }
+  }
+
+  &__books {
+    padding: 20px 40px 4px 40px;
+  }
+
+  &__book {
+    margin-bottom: 8px;
+  }
+
+  &__preview {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 16px 60px;
+    border: 1px solid var(--bg-color);
+
+    @include xs-down {
+      padding: 16px 10px 16px 10px;
+    }
+
+    &:hover {
+      background: var(--bg-color);
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    @include xs-down {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__right {
+    display: none;
+    align-items: center;
+  }
+
+  &__arrow {
+    margin-right: 22px;
+
+    &_open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: var(--black-color);
+    margin-right: 16px;
+
+    @include xs-down {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title-brackets {
+    color: var(--gray-color);
+  }
+
+  &__add-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 51px;
+
+    @include xs-down {
+      margin-right: 10px;
+    }
+  }
+
+  &__add-icon {
+    margin-left: 16px;
+  }
+
+  &__add-icon {
+    margin-right: 16px;
+  }
+
+  &__add-btn-text {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    @include xs-down {
+      display: none;
+    }
+  }
+}

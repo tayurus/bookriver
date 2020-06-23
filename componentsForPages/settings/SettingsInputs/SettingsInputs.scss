@@ -1,0 +1,59 @@
+.settings-inputs {
+  &__subtitle {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  &__field {
+    width: 100%;
+    max-width: 282px;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @include sm-down {
+        margin-right: 0;
+      }
+    }
+
+    @include sm-down {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    @include sm-down {
+      flex-direction: column;
+    }
+  }
+
+  &__social-grid {
+    display: grid;
+    grid-gap: 24px 64px;
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+
+  &__radio-group {
+    .ant-radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    margin: 15px 0;
+  }
+
+  &__radio {
+    margin: 7px 0 !important;
+  }
+
+  &__textarea {
+    margin-bottom: 16px;
+  }
+}

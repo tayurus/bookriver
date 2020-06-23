@@ -1,0 +1,22 @@
+.author-cycle {
+  &__cycle-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__cycle-label {
+    color: var(--gray-color);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Roboto;
+    margin: 0 5px;
+  }
+
+  &__cycle-title {
+    color: var(--black-color);
+  }
+
+  &__book {
+  }
+}

@@ -1,0 +1,16 @@
+.site-label {
+  font-family: Roboto;
+
+  &__text {
+    color: var(--black-color);
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+  }
+
+  &__tip {
+    color: var(--gray-color);
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

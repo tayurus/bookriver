@@ -1,0 +1,39 @@
+image: node:latest
+
+cache:
+  untracked: true
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - linter
+  - deploy
+
+Run build:
+  stage: build
+  before_script:
+    - yarn install
+  script:
+    - yarn build
+
+Run linter:
+  stage: linter
+  before_script:
+    - yarn install
+  script:
+    - yarn lint
+
+Run deploy:
+  stage: deploy
+  image: ictu/sshpass
+  script:
+    - export SSHPASS=$USER_PASS
+    - sshpass -e ssh -o StrictHostKeyChecking=no -p946 bookriver@95.213.247.104 'cd /home/bookriver/git/bookriver-frontend; git pull'
+    - sshpass -e ssh -o StrictHostKeyChecking=no -p946 bookriver@95.213.247.104 'cd /home/bookriver/git/bookriver-frontend; yarn install'
+    - sshpass -e ssh -o StrictHostKeyChecking=no -p946 bookriver@95.213.247.104 'cd /home/bookriver/git/bookriver-frontend; yarn build'
+    - sshpass -e ssh -o StrictHostKeyChecking=no -p946 bookriver@95.213.247.104 'cd /home/bookriver/git/bookriver-frontend; pm2 delete nextjs; true'
+    - sshpass -e ssh -o StrictHostKeyChecking=no -p946 bookriver@95.213.247.104 'cd /home/bookriver/git/bookriver-frontend; pm2 start yarn --name nextjs -- start'
+  only:
+    - master

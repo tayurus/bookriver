@@ -1,0 +1,58 @@
+.subscribe-card {
+  width: 100%;
+  max-width: 282px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(141, 147, 162, 0.25);
+  border-radius: 4px;
+
+  &__top {
+    //padding: 18px 16px;
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bottom {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+
+  &__read-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__read-info-block {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__read-info-text {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7f8794;
+    margin-right: 8px;
+  }
+
+  &__read-info-num {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #282c2f;
+  }
+}

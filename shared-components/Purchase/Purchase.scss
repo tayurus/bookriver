@@ -1,0 +1,103 @@
+.purchase {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 4px 4px;
+  padding: 10px 25px;
+  &__id-wrap {
+  }
+
+  &__id {
+    font-size: 13px;
+    line-height: 20px;
+    color: #7f8794;
+    margin-right: 50px;
+  }
+
+  &__data-wrap {
+    margin-right: 50px;
+  }
+
+  &__data {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__time {
+    font-size: 13px;
+    line-height: 20px;
+    color: #7f8794;
+  }
+
+  &__content {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__image {
+    width: 42px;
+    margin-right: 16px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__info {
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #282c2f;
+    margin-bottom: 2px;
+  }
+
+  &__co-author {
+  }
+
+  &__co-author-link {
+    font-size: 13px;
+    line-height: 20px;
+    color: #7f8794;
+    margin-right: 3px;
+    &:not(:last-child) {
+      &:after {
+        content: ",";
+      }
+    }
+  }
+
+  &__price-wrap {
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bill {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    svg {
+      display: block;
+    }
+  }
+
+  &__price-num {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    &:after {
+      content: " ₽";
+    }
+  }
+}

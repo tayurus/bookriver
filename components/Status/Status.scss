@@ -1,0 +1,50 @@
+.site-status {
+  border-radius: 10px;
+  color: var(--black-color);
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px 10px 3px 25px;
+  letter-spacing: 0.05em;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+
+  &_undefined,
+  &_unknown {
+    background-color: var(--yellow-color);
+    padding: 3px 10px 3px 10px;
+  }
+
+  &_complete {
+    background-color: var(--green-color);
+    background-image: url("/static/Status/ok.svg");
+  }
+
+  &_writing {
+    background-color: var(--yellow-color);
+    background-image: url("/static/Status/pencil.svg");
+  }
+
+  &_hidden {
+    background-color: var(--yellow-color);
+    background-image: url("/static/Status/hidden.svg");
+  }
+
+  &_audio {
+    background-color: #d2f4ff;
+    background-position: 5px center;
+    background-image: url("/static/Status/audio.svg");
+    padding: 3px 10px 3px 25px;
+  }
+
+  &_error {
+    color: #ea1b4d;
+    padding: 3px 10px 3px 10px;
+    background: rgba(234, 27, 77, 0.05);
+  }
+
+  &_unknown {
+    background-color: var(--yellow-color);
+  }
+}

@@ -1,0 +1,148 @@
+.author-book {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(141, 147, 162, 0.25);
+  border-radius: 4px;
+  padding: 16px;
+
+  &__content {
+    display: flex;
+    padding-right: 50px;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    width: 100px;
+    margin-right: 20px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #282c2f;
+    margin-bottom: 6px;
+  }
+
+  &__co-author {
+    font-size: 14px;
+    line-height: 22px;
+    color: #2f80ed;
+    margin-bottom: 10px;
+
+    span {
+      color: #7f8794;
+    }
+  }
+
+  &__co-author-link {
+    margin-right: 3px;
+
+    &:not(:last-child) {
+      &:after {
+        content: ",";
+      }
+    }
+  }
+
+  &__genres {
+    font-size: 14px;
+    line-height: 22px;
+    color: #282c2f;
+    margin-bottom: auto;
+  }
+
+  &__genres-link {
+    font-size: 14px;
+    line-height: 22px;
+    color: #282c2f;
+    text-decoration: underline #d0d9dd;
+    margin-right: 3px;
+
+    &:not(:last-child) {
+      &:after {
+        content: ",";
+      }
+    }
+  }
+
+  &__info-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__status-wrap {
+    margin-right: 15px;
+  }
+
+  &__pages-wrap {
+  }
+
+  &__pages {
+    font-size: 14px;
+    line-height: 22px;
+    color: #7f8794;
+    &:after {
+      content: " стр.";
+    }
+
+    span {
+      color: #282c2f;
+    }
+  }
+
+  &__utils {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn-group {
+    margin-bottom: auto;
+  }
+
+  &__fake-btn {
+  }
+
+  &__statistic-group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__statistic-block {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__statistic-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  &__statistic-num {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7f8794;
+
+    svg {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.book-info {
+  background: var(--bg-color);
+  box-shadow: 0 1px 2px rgba(53, 63, 72, 0.15);
+  border-radius: 2px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  padding: 16px 16px 16px 40px;
+
+  @include sm-down {
+    padding: 16px 12px 16px 12px;
+  }
+
+  @include xs-down {
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 82px;
+    height: 116px;
+    object-fit: contain;
+    margin-right: 24px;
+
+    @include xs-down {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &_first {
+      margin-bottom: 10px;
+    }
+
+    &_second {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__publish-date {
+    color: var(--gray-color);
+    text-decoration: dotted;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  &__divider {
+    border: 0.5px solid #d0d9dd;
+    height: 16px;
+    margin: 0 8px;
+  }
+
+  &__characters {
+    color: var(--gray-color);
+    font-size: 13px;
+    line-height: 22px;
+    margin-right: 17px;
+  }
+
+  &__comments {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  &__status {
+    &:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+
+  &__table {
+    display: block;
+  }
+
+  &__tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__table-cell {
+    display: block;
+    margin-right: 6px;
+  }
+
+  &__table-cell-title {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--gray-color);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  &__table-cell-num {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--gray-color);
+    text-transform: uppercase;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    position: absolute;
+    right: 12px;
+    top: 16px;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+}

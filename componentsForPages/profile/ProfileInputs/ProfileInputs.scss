@@ -1,0 +1,54 @@
+.profile-inputs {
+  &__field {
+    width: 100%;
+    margin-bottom: 25px;
+
+    &_date-picker {
+      max-width: 282px;
+      margin-right: 24px;
+
+      @include xs-down {
+        max-width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__radio {
+    padding: 11px 0 !important;
+
+    @include xs-down {
+      padding: 0 !important;
+    }
+
+    &-group {
+      margin-bottom: 23px;
+    }
+
+    &_male {
+      margin-right: 24px !important;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__save-btn {
+    display: block;
+    margin: 0 auto;
+
+    @include xs-down {
+      display: block;
+      width: 100%;
+      text-align: center !important;
+      justify-content: center;
+    }
+  }
+
+  &__avatar-upload {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}

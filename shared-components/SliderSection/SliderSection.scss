@@ -1,0 +1,233 @@
+.slider-section {
+  padding-top: 40px;
+  padding-bottom: 45px;
+
+
+  &_personal {
+    //margin-right: -30px;
+    //margin-left: -30px;
+    background-color: #D2F4FF;
+
+    .slider-section__slider {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 225px;
+        height: 100%;
+        pointer-events: none;
+        background: linear-gradient(270deg, #D2F4FF 0%, rgba(227, 248, 235, 0) 91.77%);
+        z-index: 8;
+
+        @include xs-down {
+          width: 75px;
+        }
+      }
+
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 225px;
+        height: 100%;
+        background: linear-gradient(-270deg, #D2F4FF 0%, rgba(227, 248, 235, 0) 91.77%);
+        pointer-events: none;
+        z-index: 8;
+
+        @include xs-down {
+          width: 75px;
+          display: none;
+        }
+      }
+
+    }
+
+    .slider-section__separator {
+
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+
+
+
+  &__title-wrap {
+    //width: 100%;
+  }
+
+  &__title-link {
+    display: block !important;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #282C2F;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-bottom: 0.3em;
+    flex-grow: 1;
+    white-space: nowrap;
+
+    @include sm-down {
+      white-space: normal;
+    }
+
+    &:hover {
+      color: #4b96fb;
+    }
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: #D0D9DD;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__btn-wrap {
+
+  }
+
+  &__btn {
+
+  }
+
+  &__book {
+    margin: 0 auto;
+  }
+
+  &__slider {
+    display: block;
+    position: relative !important;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 225px;
+      height: 100%;
+      background: linear-gradient(270deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 91.77%);
+      pointer-events: none;
+      z-index: 8;
+
+      @include xs-down {
+        width: 75px;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 225px;
+      height: 100%;
+      background: linear-gradient(-270deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 91.77%);
+      pointer-events: none;
+      z-index: 8;
+
+      @include xs-down {
+        width: 75px;
+        display: none;
+      }
+    }
+
+    .ant-carousel {
+
+    }
+
+    .slick-list {
+      //margin-left: 100px !important;
+
+      @include md-down {
+        margin-left: 0 !important;
+      }
+    }
+
+    .ant-carousel .slick-slide {
+      //width: 300px;
+      //text-align: center;
+      //height: 160px;
+      //line-height: 160px;
+      //background: #364d79;
+      //overflow: hidden;
+      //margin: 10px;
+    }
+
+    //.ant-carousel .slick-slide h3 {
+    //  color: #fff;
+    //}
+  }
+
+  &__next-arrow {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #D0D9DD;
+    box-shadow: 0px 1px 2px rgba(53, 63, 72, 0.15);
+    background-image: url("/static/SliderSection/next-arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 9;
+    transition: 0.2s;
+
+    &:hover {
+      border: 1px solid #282C2F;
+    }
+  }
+
+  &__prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #D0D9DD;
+    box-shadow: 0px 1px 2px rgba(53, 63, 72, 0.15);
+    background-image: url("/static/SliderSection/prev-arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 9;
+    transition: 0.2s;
+
+    &:hover {
+      border: 1px solid #282C2F;
+    }
+  }
+
+  &__empty-slide {
+    position: relative;
+    width: 100%;
+    max-width: 180px;
+    background: transparent;
+    padding: 8px 12px 10px;
+  }
+}

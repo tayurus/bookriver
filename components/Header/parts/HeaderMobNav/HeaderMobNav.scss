@@ -1,0 +1,136 @@
+.header-mob-nav {
+  //visibility: hidden;
+  //touch-action: none;
+  //opacity: 0;
+  //position: absolute;
+  //top: 90px;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  //width: 100%;
+  //height: 100%;
+  //transition: 0.3s ease-in-out;
+  //background-color: rgba(0,0,0, .5);
+  //background-color: transparentize(#000000, .5);
+  //z-index: 999;
+
+  //&_is-active {
+  //  visibility: visible;
+  //  touch-action: auto;
+  //  opacity: 1;
+  //  .header-mob-nav__content {
+  //    transform: translateX(0);
+  //  }
+  //}
+
+  &__drawer {
+
+    .ant-drawer-content-wrapper {
+      box-shadow: none !important;
+    }
+
+    .ant-drawer-body {
+      padding-top: 25px !important;
+      padding-bottom: 25px !important;
+      padding-right: 15px !important;
+      padding-left: 0 !important;
+    }
+  }
+
+  &__exit {
+    width: 50px;
+    height: 50px;
+    background-color: #2f80ed;
+  }
+
+  &__wrap {
+
+  }
+
+  //&__content {
+  //  background-color: #ffffff;
+  //  width: 276px;
+  //  transform: translateX(-300px);
+  //  height: calc(100vh - 90px);
+  //  overflow: hidden;
+  //  overflow-y: auto;
+  //  pointer-events: auto;
+  //  padding-right: 20px;
+  //  z-index: 1011;
+  //  transition: 0.3s ease-in-out;
+  //  .ant-menu {
+  //    //overflow: hidden;
+  //    //overflow-y: auto !important;
+  //  }
+  //
+  //  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  //    border-right: none !important;
+  //  }
+  //}
+
+  &__search-wrap {
+    position: relative;
+    margin-left: 15px;
+    //margin-top: 20px;
+  }
+
+  &__search-btn-wrap {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    z-index: 1;
+  }
+
+  &__search-btn {
+    padding: 0 !important;
+    transform: translateY(-50%);
+
+
+    &.site-button {
+      border: 1px solid transparent !important;
+
+      &:hover {
+        border: 1px solid transparent !important;
+        opacity: 0.7 !important;
+
+        svg {
+          path {
+            fill: #4b96fb;
+          }
+        }
+      }
+    }
+
+    &.site-button_medium {
+      padding: 8.5px 11px !important;
+    }
+
+    svg {
+      display: block;
+      width: 20px;
+      height: auto;
+
+    }
+  }
+
+  &__search-input {
+    input {
+      font-size: 14px;
+      line-height: 1.5;
+      padding-left: 50px;
+    }
+  }
+
+  &__menu {
+    padding-top: 15px !important;
+    padding-bottom: 90px !important;
+    border-right: none !important;
+
+    //.ant-menu-submenu,
+    //.ant-menu-submenu-inline,
+    //.ant-menu-submenu-title,
+    //.ant-menu-item {
+    //  padding-left: 0!important;
+    //}
+  }
+}

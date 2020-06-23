@@ -1,0 +1,18 @@
+.book-edit-stats {
+  &__table {
+    th {
+      text-align: left !important;
+      //padding-right: 0 !important;
+      //padding-left: 0 !important;
+    }
+  }
+
+  &__chart {
+    height: 300px;
+    background: var(--gray2-color);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

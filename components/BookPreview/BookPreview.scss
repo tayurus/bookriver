@@ -1,0 +1,46 @@
+.book-preview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 42px;
+    height: 58px;
+    margin-right: 20px;
+  }
+
+  &__info {
+    margin-right: auto;
+  }
+
+  &__title,
+  &__event-title {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__author,
+  &__event-description {
+    color: var(--gray-color);
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Roboto;
+  }
+
+  &__price {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 2px;
+
+    &_old {
+      font-weight: 500;
+      color: var(--gray-color);
+      text-decoration: line-through;
+      margin-bottom: 0;
+    }
+  }
+}

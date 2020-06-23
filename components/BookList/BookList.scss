@@ -1,0 +1,16 @@
+.book-list {
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(auto-fill, 180px);
+  justify-content: center;
+  @include xs-down {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 240px);
+  }
+
+  &__book {
+    @include xs-down {
+      max-width: 240px;
+    }
+  }
+}

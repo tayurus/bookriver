@@ -1,0 +1,143 @@
+/* Так как Next.js не поддерживает импорт глобальных стилей из файла компонента
+ я создал этот файл, в который буду импортировать все стилевые файлы проекта (Я использую старый добрый БЭМ для верстки, не люблю CSS in JS)*/
+@import "mixins";
+
+// кастомизация анта
+@import "./antd-custom";
+
+/* !!!!!!!!!!!! components !!!!!!!!!!!!! */ //header && login && register && recovery
+@import "./components/Header/Header";
+@import "./components/Header/parts/HeaderMobNav/HeaderMobNav";
+@import "../components/Header/parts/LoginRegisterRecovery/LoginRegisterRecovery";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* common components */
+
+/*Обертки вокруг ANT*/
+@import "../components/BookPreview/BookPreview";
+@import "../components/RadioGroup/RadioGroup";
+@import "../components/Radio/Radio";
+@import "../components/Input/Input";
+@import "../components/Switch/Switch";
+@import "../components/Select/Select";
+@import "../components/Checkbox/Checkbox";
+@import "../components/AutoComplete/AutoComplete";
+@import "../components/DatePicker/DatePicker";
+@import "../components/Slider/Slider";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Собственные, написанные с нуля компоненты */
+@import "../components/Label/Label";
+@import "../components/Button/Button";
+@import "../components/AuthorBook/AuthorBook";
+@import "../components/UserView/UserView";
+@import "../components/BookCover/BookCover";
+@import "../components/NavMenu/NavMenu";
+@import "../components/Status/Status";
+@import "../components/Footer/Footer";
+@import "../components/AuthorShortView/AuthorShortView";
+@import "../components/BookInfo/BookInfo";
+@import "../components/BookCard/BookCard";
+@import "../components/BookList/BookList";
+@import "../components/BookReader/BookReader";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Прочее */
+@import "../components/Loader/Loader";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* layouts */
+@import "../layouts/UserAccount/UserAccount";
+@import "../layouts/CommonLayoutContainer/CommonLayoutContainer";
+@import "../layouts/ReaderLayout/ReaderLayout";
+
+/* !!!!!!!!!! pages  !!!!!!!!!!!!!*/
+
+// CartPage styles
+@import "../pages/cart/cart";
+
+// BookEditPage styles
+@import "../pages/book-edit/book-edit";
+
+// BookEditPage ChapterEdit styles
+@import "../pages/book-edit/[bookId]/chapter/chapter-edit";
+
+// BookEditPage components
+@import "../componentsForPages/book-edit/BookEditCommon/BookEditCommon";
+@import "../componentsForPages/book-edit/ChaptersList/ChaptersList";
+@import "../componentsForPages/book-edit/OptionsPopover/OptionsPopover";
+@import "../componentsForPages/book-edit/ChapterInfo/ChapterInfo";
+@import "../componentsForPages/book-edit/DescriptionInputs/DescriptionInputs";
+@import "../componentsForPages/book-edit/CostInputs/CostInputs";
+@import "../componentsForPages/book-edit/Stats/Stats";
+@import "../componentsForPages/book-edit/Log/Log";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// BooksPage
+
+// BooksPage components
+@import "../componentsForPages/books/BooksCycle/BooksCycle";
+@import "../componentsForPages/books/UserCycles/UserCycles";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// SettingsPage
+@import "settings/settings.scss";
+
+// SettingsPage components
+@import "../componentsForPages/settings/SettingsInputs/SettingsInputs";
+@import "../componentsForPages/settings/SocialNetworkItem/SocialNetworkItem";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Profile 2
+@import "profile/profile.scss";
+
+// Profile 2 components
+@import "../componentsForPages/profile/ProfileInputs/ProfileInputs";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// AuthorPage
+@import "author/author.scss";
+
+// AuthorPage components
+@import "../componentsForPages/author/AuthorCard/AuthorCard";
+@import "../componentsForPages/author/AuthorCycle/AuthorCycle";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// MyBooks page
+@import "my-books/my-books.scss";
+
+// MyBooks page components
+@import "../componentsForPages/my-books/BooksFilter/BooksFilter";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Reader page
+@import "reader/[bookId]/reader";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Finance page
+@import "finance/finance.scss";
+
+// Finance page components
+@import "../componentsForPages/finance/OperationsTable/OperationsTable";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Book page
+
+
+// Book page components
+@import "../componentsForPages/book/BuyBook/BuyBook";
+@import "../componentsForPages/book/BuyBook/parts/ModalBuyBook/ModalBuyBook";
+
+
+// Notifications page
+@import "notifications/notifications";
+
+// Notification page components
+@import "../shared-components/Notification/Notification";
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Shared-components */
+@import "../components/Footer/Footer";
+@import "../shared-components/UserCard/UserCard";
+@import "../shared-components/SubscribeCard/SubscribeCard";
+@import "../shared-components/SocialNetworkItem/SocialNetworkItem";
+@import "../shared-components/Purchase/Purchase";
+@import "../shared-components/Cart/Cart";
+@import "../shared-components/SliderSection/SliderSection";
+@import "../componentsForPages/finance/FinanceInfo/FinanceInfo";
+@import "../shared-components/BookContentPreviewModal/BookContentPreviewModal";
+
+@import "../components/FileUpload/FileUpload";

@@ -1,0 +1,24 @@
+.author-page {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+
+  @include sm-down {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__author-books {
+    width: 100%;
+  }
+
+  &__card {
+    margin-right: 24px;
+
+    @include sm-down {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}

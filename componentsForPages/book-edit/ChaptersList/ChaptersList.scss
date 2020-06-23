@@ -1,0 +1,48 @@
+.chapter-list {
+  background: #fff;
+
+  .ant-tree-switcher {
+    display: none;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+
+    @include sm-down {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    margin-right: 16px;
+    width: 150px;
+
+    @include sm-down {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__tip {
+    color: var(--gray-color);
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Roboto;
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 13px;
+  }
+
+  &__label {
+    color: var(--gray-color);
+    margin-right: 16px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+  }
+}

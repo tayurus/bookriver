@@ -1,0 +1,83 @@
+.description-inputs {
+  display: flex;
+
+  @include sm-down {
+    flex-direction: column;
+    align-items: center;
+  }
+  //display: grid;
+  //grid-template-columns: 140px minmax(auto, max-content);
+  //grid-gap: 41px;
+
+  &__right {
+  }
+
+  &__image-uploader {
+    width: 140px !important;
+    height: 170px !important;
+
+    .ant-upload-list-picture-card-container,
+    .ant-upload-list-item,
+    .ant-upload-select {
+      width: 140px !important;
+      height: 170px !important;
+    }
+
+    margin-right: 40px;
+    margin-bottom: 30px;
+
+    @include sm-down {
+      margin-right: 0;
+    }
+  }
+
+  &__field {
+    margin-bottom: 15px;
+  }
+
+  &__checkbox {
+    margin: 29px 0;
+
+    &_first {
+      margin-top: 0;
+    }
+  }
+
+  &__save-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__autocomplete-option {
+    display: flex;
+    align-items: center;
+  }
+
+  &__autocomplete-author-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 100%;
+  }
+
+  &__autocomplete-author-name {
+    color: var(--black-color);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Roboto;
+  }
+
+  &__inputs-grid {
+    display: grid;
+    grid-template-columns: 190px minmax(190px, 357px);
+    grid-gap: 16px;
+
+    @include sm-down {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__label {
+    margin-bottom: 18px;
+  }
+}

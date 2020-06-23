@@ -1,0 +1,19 @@
+.author-short-view {
+  display: flex;
+  align-items: center;
+  &__image {
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 12px;
+  }
+
+  &__author-name {
+    color: var(--black-color);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Roboto;
+  }
+}

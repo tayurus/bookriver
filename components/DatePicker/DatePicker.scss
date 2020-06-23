@@ -1,0 +1,25 @@
+.site-datepicker {
+  .ant-picker {
+    width: 100%;
+  }
+
+  &__tip {
+    color: var(--gray-color);
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Roboto;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black-color);
+    font-family: Roboto;
+    margin-bottom: 8px;
+  }
+
+  &__error {
+    color: var(--error-color);
+    font-family: Roboto;
+  }
+}

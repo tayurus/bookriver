@@ -1,0 +1,30 @@
+.user-account-layout {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 55px;
+  padding-bottom: 100px;
+  width: 100%;
+  justify-content: space-between;
+
+  @include md-down {
+    flex-direction: column;
+  }
+
+  &__side-nav {
+    margin-right: 25px;
+    margin-bottom: 30px;
+
+    @include md-down {
+      display: none;
+    }
+  }
+
+  &__children {
+    max-width: 894px;
+    width: 100%;
+
+    @include md-down {
+      max-width: 100%;
+    }
+  }
+}

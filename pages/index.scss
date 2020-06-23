@@ -1,0 +1,122 @@
+/* тут будут подключаться шрифты, задаваться стили для body, описываться css-переменные и супер глобальные классы
+ типа .container*/
+@import "mixins";
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("/static/fonts/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+
+  src: url("/static/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+
+  src: url("/static/fonts/Gilroy-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+
+  src: url("/static/fonts/Gilroy-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+
+  src: url("/static/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("/static/fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+
+  src: url("/static/fonts/Roboto-Medium.woff2") format("woff2"), url("/static/fonts/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+
+  src: url("/static/fonts/Roboto-Bold.woff") format("woff");
+}
+
+:root {
+  /*colors*/
+  --primary-color: #4b96fb;
+  --black-color: #282c2f;
+  --gray-color: #7f8794;
+  --gray2-color: #f9f9f9;
+  --gray3-color: #d0d9dd;
+  --yellow-color: #ffedb8;
+  --green-color: #b9f8d3;
+  --error-color: #ea1b4d;
+  --bg-color: #f9f9f9;
+
+  /*sizes*/
+  --container-width: 1200px;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f9f9f9 !important;
+}
+
+.site-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.site-content {
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+
+  @include xs-down {
+    padding: 15px 10px;
+  }
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

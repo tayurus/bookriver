@@ -1,0 +1,27 @@
+import React from "react";
+import { withNaming } from "@bem-react/classname";
+import classNames from "classnames/dedupe";
+import { IProps, defaultProps, IState } from "./interface";
+
+const cn = withNaming({
+  n: "",
+  e: "__",
+  m: "_",
+  v: "_",
+});
+const b = cn("author-short-view");
+
+export class AuthorShortView extends React.Component<IProps, IState> {
+  static defaultProps = defaultProps;
+
+  render() {
+    const { className, userImageUrl, authorName } = this.props;
+
+    return (
+      <div className={classNames(b(), className)}>
+        <div className={b("image")} style={{ backgroundImage: `url(${userImageUrl})` }} />
+        <div className={b("author-name")}>{authorName}</div>
+      </div>
+    );
+  }
+}

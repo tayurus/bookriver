@@ -1,0 +1,59 @@
+.books-filter {
+  display: flex;
+  border: 1px solid var(--gray2-color);
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px rgba(141, 147, 162, 0.25);
+  border-radius: 4px;
+  background: #fff;
+  padding: 16px;
+
+  @include sm-down {
+    flex-direction: column;
+  }
+
+
+  &__input-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+    padding: 1px 0 1px 16px;
+
+    @include sm-down {
+      width: 100% !important;
+      margin-bottom: 10px;
+      flex-direction: column;
+      padding: 4px 10px 4px 10px;
+    }
+
+    &_status {
+      width: 229px;
+    }
+
+    &_genres {
+      max-width: 627px;
+      width: 100%;
+    }
+
+    &_size {
+      width: 264px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__input-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray-color);
+  }
+
+  &__select {
+    width: 100%;
+    .ant-select-selector {
+      border: none !important;
+    }
+  }
+}

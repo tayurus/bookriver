@@ -1,0 +1,105 @@
+.site-login {
+  text-align: center;
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black-color);
+    margin: 0 0 37px 0;
+    text-align: left;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_social {
+      width: 260px;
+      margin: 0 auto 22px auto;
+    }
+
+    &_bottom-login {
+      margin: 17px 0 25px 0;
+    }
+  }
+
+  &__social-icon {
+    cursor: pointer;
+  }
+
+  &__label {
+    color: var(--gray-color);
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Roboto;
+
+    &_lines {
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      &:before {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background: #d0d9dd;
+        margin-right: 13px;
+      }
+      &:after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background: #d0d9dd;
+        margin-left: 13px;
+      }
+
+      &_or {
+        margin-bottom: 41px;
+      }
+    }
+
+    &_no-account {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__field {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+
+    &_recovery {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: var(--gray-color);
+    &_agreement {
+      margin-bottom: 27px;
+      margin-top: 10px;
+    }
+  }
+
+  &__error {
+    color: var(--error-color);
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Roboto;
+    margin: 6px 0;
+  }
+}

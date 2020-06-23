@@ -1,0 +1,70 @@
+.cost-inputs {
+  &__radio-group-wrapper {
+    margin: 33px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio-group {
+    margin-right: 44px;
+
+    .ant-radio-group {
+      width: 237px;
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+  &__save-btn {
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+
+  &__price-input {
+    width: 173px;
+  }
+
+  &__currency-select {
+    width: 80px;
+  }
+
+  &__price-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__price-input-group {
+    width: auto !important;
+    margin-right: 24px !important;
+  }
+
+  &__free-chapters-select {
+    margin-bottom: 33px;
+    width: 250px;
+  }
+
+  &__coauthors-label {
+    margin-bottom: 23px;
+  }
+
+  &__coauthor-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__coauthor-view {
+    margin-right: 35px;
+  }
+
+  &__coauthor-role {
+    font-family: Roboto;
+    color: var(--gray-color);
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 60px;
+  }
+
+  &__coauthor-fee {
+    width: 96px;
+  }
+}

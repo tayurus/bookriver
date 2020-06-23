@@ -1,0 +1,236 @@
+.finance-info {
+  padding: 16px 0;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 25px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d0d9dd80;
+    }
+
+    @include sm-down {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    //padding: 20px 25px;
+  }
+
+  &__name {
+    max-width: 200px;
+    margin-right: 30px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7f8794;
+
+    @include sm-down {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info-wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__virtual-card {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #282c2f;
+    &:after {
+      content: " ₽ ";
+    }
+  }
+
+  &__blocked-sum {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7f8794;
+
+    svg {
+      display: block;
+      margin-right: 8px;
+    }
+
+    span {
+      display: block;
+      text-decoration: underline dotted #7f8794;
+
+      &:after {
+        content: " ₽";
+      }
+    }
+
+    &-popover {
+      max-width: 228px;
+    }
+  }
+
+  &__withdraw-sum {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #282c2f;
+    min-width: 200px;
+    margin-right: 15px;
+
+    &:after {
+      content: " ₽ ";
+    }
+
+    @include sm-down {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__withdraw-btn-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include sm-down {
+      width: 100%;
+    }
+  }
+
+  &__withdraw-btn {
+    margin-bottom: 8px;
+  }
+
+  &__withdraw-pay-commission {
+    font-size: 14px;
+    line-height: 22px;
+    color: #7f8794;
+  }
+
+  &__account-card {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #282c2f;
+
+    svg {
+      display: block;
+      margin-right: 8px;
+    }
+
+    &_card-expired {
+      color: #7f8794;
+      margin-right: 15px;
+      margin-bottom: 10px;
+
+      svg {
+        path {
+          fill: #7f8794;
+        }
+      }
+    }
+  }
+
+  &__status-wrap {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex !important;
+    align-items: center;
+    margin-bottom: 10px;
+
+    svg {
+      display: block;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__bound-card-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7f8794;
+
+    @include sm-down {
+      margin-bottom: 10px;
+      margin-right: 15px;
+    }
+  }
+
+  &__bound-card-btn {
+
+    @include sm-down {
+      display: block;
+      width: 100%;
+      text-align: center !important;
+      justify-content: center;
+    }
+  }
+
+  &__info-block {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px 16px 16px 50px;
+
+    &:before {
+      content: "₽";
+      position: absolute;
+      top: -2px;
+      left: -6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 0 0 24px;
+      background-color: #fbca4b;
+      font-size: 16px;
+      line-height: 16px;
+      color: #282c2f;
+    }
+
+    &-title {
+      font-size: 14px;
+      line-height: 22px;
+      color: #282c2f;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: 20px;
+      color: #7f8794;
+      margin: 0;
+    }
+
+    &-link {
+    }
+  }
+}
